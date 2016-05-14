@@ -1,0 +1,61 @@
+.timeline-wrapper {
+  width: 400px;
+  overflow: auto;
+  position: relative;
+  height: 100px;
+}
+#container{
+  padding: 16px;
+}
+.timeline {
+  position: relative;
+}
+.step {
+  position: absolute;
+  text-align: center;
+}
+.junction-point {
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+}
+.list {
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+}
+.current{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.05s linear;
+}
+
+.animate-steps-color{
+  background-color: #2ED541;
+  transition: background 0.05s linear;
+  background-position: left;
+}
+.junction-label{
+  position: absolute;
+  bottom: 0px;
+  display: inline-block;
+  color: #E0E0E0;
+  max-width: 50px;
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 12px;
+}
+.stick-bottom{
+    right: -15px;
+}
+
+.stick-center{
+  left: 50%;
+  right: auto;
+  transform: translate3d(-50%,0,0);
+}
+
+.animate-label-color{
+  color: black;
+}
